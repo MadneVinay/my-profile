@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+      header span{
+        text-decoration: solid;
+        font-size: larger;
+        color: blue;
+        padding-left: 20px;
+      
+      }
+      #download{
+        text-decoration: none;
+        margin-left: 1400px;
+      }
+      nav a{
+        text-decoration: none;
+        margin-left: 40px;
+        font-size: larger;
+        /* background-color: grey; */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <span>Vinay Madne</span>
+      <i class="fa fa-mobile" aria-hidden="true"></i>
+      <span>9834 6553 80</span>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      <span>Vinaymadne30@gmail.com</span>
+      <a href="resume.pdf" download="" id="download"> Download</a>
+    </header>
+    <br>
+    <nav>
+      <a href="home.html" target="myFrame">Home</a>
+      <a href="techStack.html" target="myFrame"> Technology Stack</a>
+      <a href="project.html" target="myFrame">Project</a>
+      <a href="education.html" target="myFrame">Education</a>
+      <a href="aboutMe.html" target="myFrame">About Me</a><br />
+    </nav>
+    <iframe
+      height="550px"
+      width="900px"
+      name="myFrame"
+      frameborder="0"
+      src="home.html">
+    </iframe>
+    <br/><br/>
+    <footer>
+      <span>Follow me</span>
+      <a href="https://www.instagram.com/vinay_theboss/" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/vinay-madne-428265253/"
+        target="_blank"
+      >
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+    </footer>
+  </body>
 </html>
