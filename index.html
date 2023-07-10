@@ -4,46 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-      header span{
+        header ul li{
         font-size: larger;
         color: blue;
+        display: inline-block;
+        margin-right: 50px;
       }
-      header i{
-        color: blue;
-        padding-left: 20px;
-      }
-      
-      #download{
+         #download {
         text-decoration: none;
-        margin-left: 500px;
       }
-      nav a{
-        text-decoration: none;
-        margin-left: 40px;
+      nav ul li{
+        display: inline-block;
+        margin-left: 50px;
         font-size: larger;
-        /* background-color: grey; */
+        color: rgb(78, 16, 160);
+      }
+      nav ul li a{
+        text-decoration: none;
+      } 
+      #follow{
+        font-size: larger;
+      }
+      footer ul li{
+        display: inline-block;
+        margin-right: 20px;
+      }
+      #copyright{
+        display: block;
+        color: #4B0CD6;     
       }
     </style>
   </head>
   <body>
     <header>
-      <i class="fa fa-user" aria-hidden="true">   </i>
-      <span>Vinay Madne</span>
-      <i class="fa fa-mobile" aria-hidden="true">  </i>
+      <ul>
+        <li>
+          <i class="fa fa-user" aria-hidden="true"> </i>
+          <span>Vinay Madne</span>
+        </li>
+        <li>
+          <i class="fa fa-mobile" aria-hidden="true"> </i>
       <span>9834 6553 80</span>
-      <i class="fa fa-envelope-o" aria-hidden="true">  </i>
+        </li>
+        <li>
+          <i class="fa fa-envelope-o" aria-hidden="true"> </i>
       <span>Vinaymadne30@gmail.com</span>
-      <a href="resume.pdf" download="" id="download"> Download</a>
+        </li>
+        <li>
+          <a href="resume.pdf" download="" id="download"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+        </li>
+      </ul>      
     </header>
-    <br>
     <nav>
-      <a href="home.html" target="myFrame">Home</a>
-      <a href="techStack.html" target="myFrame"> Technology Stack</a>
-      <a href="project.html" target="myFrame">Project</a>
-      <a href="education.html" target="myFrame">Education</a>
-      <a href="aboutMe.html" target="myFrame">About Me</a><br />
+      <ul>
+        <li><a href="home.html" target="myFrame">Home</a></li>
+        <li><a href="techStack.html" target="myFrame"> Technology Stack</a></li>
+        <li><a href="project.html" target="myFrame">Project</a></li>
+        <li><a href="education.html" target="myFrame">Education</a></li>
+        <li><a href="aboutMe.html" target="myFrame">About Me</a><br /></li>
+      </ul>
     </nav>
     <iframe
       height="550px"
@@ -51,20 +75,35 @@
       name="myFrame"
       frameborder="0"
       src="home.html"
-      style="background: linear-gradient(90deg, #A34242 0%, rgba(96, 16, 146, 0.3) 100%);" >
+      style="background: radial-gradient( #8F14B1 6%, rgba(213, 206, 196, 0.72) 100%);">
     </iframe>
-    <br/><br/>
+    <br /><br />
     <footer>
-      <span>Follow me</span>
-      <a href="https://www.instagram.com/vinay_theboss/" target="_blank">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-      </a>
-      <a
+      <ul>
+        <li>
+          <span id="follow">Follow me</span>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/vinay_theboss/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+        <li>
+          <a
         href="https://www.linkedin.com/in/vinay-madne-428265253/"
-        target="_blank"
-      >
+        target="_blank">
         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
       </a>
+        </li>
+        <li>
+          <a href="https://github.com/MadneVinay" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li id="copyright">
+          Copyright ©2023 Madne Web Services, Inc. All rights reserved.
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
